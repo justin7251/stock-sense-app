@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "StockSense",
+    "slug": "stocksense",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.justin00721org.stocksense"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.justin00721org.stocksense"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a8893f09-ffd5-40e9-ad76-dba025bce516"
+      }
+    },
+    "owner": "justin00721-org",
+    "updates": {
+      "url": "https://u.expo.dev/a8893f09-ffd5-40e9-ad76-dba025bce516"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
