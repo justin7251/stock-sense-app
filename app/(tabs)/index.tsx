@@ -3,10 +3,20 @@ import { Button, StyleSheet, View } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { databases } from '@/lib/appwrite';
 
 export default function HomeScreen() {
-  const startGame = () => {
-    console.log('Starting game...');
+  const startGame = async () => {
+    try {
+      // Example Appwrite usage
+      const response = await databases.listDocuments(
+        'YOUR_DATABASE_ID',
+        'YOUR_COLLECTION_ID'
+      );
+      console.log(response);
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
